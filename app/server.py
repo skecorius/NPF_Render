@@ -11,12 +11,12 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.googleapis.com/drive/v3/files/1ntlwwv3Ao3kLJ_VaXgI6Gx3_01HG1Zbz?alt=media&key=AIzaSyA1CbVi3ynikmMs4KXq1xXnHSol27UaQ2U'
+export_file_url = 'https://drive.google.com/file/d/1s37t8EHkx85UqxjzPNrvMPVVLU3t8Y3_/view?usp=sharing'
 export_file_name = 'export.pkl'
 
 Port = int(os.environ.get('PORT', 50000))
 
-classes = ['bulbasaur', 'charmander', 'pikachu']
+classes = ['bad', 'npf', 'regular']
 path = Path(__file__).parent
 
 app = Starlette()
